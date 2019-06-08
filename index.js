@@ -43,6 +43,34 @@ var obj = [
         weigth: "2.56 ct",
         amount: 5000,
     },
+    {
+        serive: "Daimond Certificate",
+        color: "pink",
+        qty: 1,
+        weigth: "2.56 ct",
+        amount: 5000,
+    },
+    {
+        serive: "Daimond Certificate",
+        color: "pink",
+        qty: 1,
+        weigth: "2.56 ct",
+        amount: 5000,
+    },
+    {
+        serive: "Daimond Certificate",
+        color: "pink",
+        qty: 1,
+        weigth: "2.56 ct",
+        amount: 5000,
+    },
+    {
+        serive: "Daimond Certificate",
+        color: "pink",
+        qty: 1,
+        weigth: "2.56 ct",
+        amount: 5000,
+    },
 ]
 var name = "fardeen";
 var Recipt = "4542165402156452";
@@ -51,106 +79,100 @@ var DeliveryDate = "14-05-2019";
 var printTime = "3:43";
 var PacketNo = 25
 
-// JsBarcode("#code128", Recipt, {
-//     format: "CODE128",
-//     lineColor: "#0aa",
-//     width:4,
-//     height:40,
-//     displayValue: false
-//   });
 
-//   JsBarcode("#code128", "20190513082555100");
 var id = document.getElementById("mainDiv");
 id.innerHTML = `
-    <div id= "text">
-    <h2>Customer Copy</h2>
-    </div>
-    <div id = "headDiv">
-        <table id = "table1">
-            <tr>
-                <td>Customer Name: </td>
-                <td class= "text">${name}</td>
-            </tr>
-            <tr>
-                <td>Recipt no: </td>
-                <td class= "text">${Recipt}</td>
-            </tr>
-            <tr>
-                <td>mobile No: </td>
-                <td class= "text">${mobileNo}</td>
-            </tr>
-            <tr class ="color">
-                <td>Delivery Date: </td>
+<div id= "text">
+Customer Copy
+</div>
+        <div id = "headDiv">
+            <table id = "table1">
+                <tr>
+                <td  class = "bold">Customer Name: </td>
+                <td class= "text1">
+                ${name}
+                </td>
+                </tr>
+                <tr>
+                <td  class = "bold">Recipt no: </td>
+                <td class= "text1">${Recipt}</td>
+                </tr>
+                <tr>
+                <td  class = "bold">Mobile No: </td>
+                <td class= "text1">${mobileNo}</td>
+                </tr>
+                <tr class ="color">
+                <td  class = "bold">Delivery Date: </td>
+                <td class= "text1">${DeliveryDate}</td>
+                </tr>
+                </table>
+                <table id = "table2">
+                <tr>
+                <td  class = "bold">Print Date: </td>
                 <td class= "text">${DeliveryDate}</td>
-            </tr>
-        </table>
-        <table id = "table2">
-            <tr>
-                <td>Print Date: </td>
-                <td class= "text">${DeliveryDate}</td>
-            </tr>
-            <tr>
-                <td>print Time: </td>
+                </tr>
+                <tr>
+                <td  class = "bold">Print Time: </td>
                 <td class= "text">${printTime}</td>
-            </tr>
-            <tr class ="color">
-                <td>Packet No: </td>
+                </tr>
+                <tr class ="color">
+                <td  class = "bold">Packet No: </td>
                 <td class= "text">${PacketNo}</td>
-            </tr>
-            <tr>
-            <td colspan="2">
-            <svg id="code128"></svg>
-            </td>
-            </tr>
-        </table>
-    </div>
-    <div id = "div2">
-    <table id = "mainTable" >
-        <tr class = "color">
-            <th class = "tr">s no</th>
-            <th class = "tr">service</th>
-            <th class = "tr">Color</th>
-            <th class = "tr">Qty</th>
-            <th class = "tr">Weight</th>
-            <th class = "tr">Seal</th>
-            <th class = "tr">Mine</th>
-            <th class = "tr">Amount</th>
-        </tr>
-    </table>
-    </div>
-    <div id = "div3">
-        <div id = "divP">
+                </tr>
+                <tr>
+                <td colspan="2" id ="center">
+                    <svg id="code128"></svg>                
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div id = "div2">
+                <table id = "mainTable" >
+                <tr class = "color">
+                <th class = "tr">S no</th>
+                <th class = "tr">Service</th>
+                <th class = "tr">Color</th>
+                <th class = "tr">Qty</th>
+                <th class = "tr">Weight</th>
+                <th class = "tr">Seal</th>
+                <th class = "tr">Mine</th>
+                <th class = "tr">Amount</th>
+                </tr>
+            </table>
+        </div>
+        <div id = "div3">
+            <div id = "divP">
             <p>I Have read & understood thye description of my articles(s).
             and i agreed that the company Shall not be responsible for
             the articles(s) left over 30 Days. And the company Sahll also
             not be responsible for any lose or damage of articles(s)
             during examination process, resulting from robbery and theft, negligrnce and natural act of God </p>
-        </div>
-        <div id = "tableDiv">
-            <table id = "bottomTable">
-                 <tr>
-                    <td>Total Amount: </td>
-                    <td class ="color text">20000</td>
-                </tr>
-                <tr>
-                    <td>Advance: </td>
-                    <td class= "text">10000</td>
-                </tr>
-                <tr>
-                    <td>Discount: </td>
-                    <td class= "text">2000</td>
-                </tr>
-                <tr id = "border">
-                    <td>Blance: </td>
-                    <td class ="color text">8000</td>
-                </tr>
+            </div>
+            <div id = "tableDiv">
+            <table id = "bottomTable"  class = "bold">
+            <tr>
+            <td>Total Amount: </td>
+            <td class ="color text">20000</td>
+            </tr>
+            <tr>
+            <td>Advance: </td>
+            <td class= "text">10000</td>
+            </tr>
+            <tr>
+            <td>Discount: </td>
+            <td class= "text">2000</td>
+            </tr>
+            <tr id = "border">
+            <td class = "padding">Balance: </td>
+            <td class ="color text padding">8000</td>
+            </tr>
             </table>
-        </div>
-        </div>
-    <div id = "sign">
-    <h3>costumer sign</h3>
-    </div>
-    `
+            </div>
+            </div>
+            <div id = "sign">
+            <h3>costumer sign</h3>
+            </div>
+            `
 
 
 
@@ -158,72 +180,81 @@ id.innerHTML = `
 var getId = document.getElementById("mainTable")
 for (var i = 0; i < obj.length; i++) {
     getId.innerHTML += ` 
-    <tr>
-        <td id = "td">${i + 1}</td>
-        <td id = "td1">${obj[i].serive}<br>${
+                <tr>
+                <td id = "td">${i + 1}</td>
+                <td id = "td1">${obj[i].serive}<br>${
         obj[i].description !== undefined ? obj[i].description : "&nbsp"
         }</td>
-        <td id = "td">${obj[i].color}</td>
-        <td id = "td">${obj[i].qty}</td>
-        <td id = "td">${obj[i].weigth}</td>
-        <td id = "td">${i + 1}</td>
-        <td id = "td">${i + 1}</td>
-        <td id = "td2">${obj[i].amount}/-</td>
-    </tr>
-    `
+                <td id = "td">${obj[i].color}</td>
+                <td id = "td">${obj[i].qty}</td>
+                <td id = "td">${obj[i].weigth}</td>
+                <td id = "td">${i + 1}</td>
+                <td id = "td">${i + 1}</td>
+                <td id = "td2" class = "bold">${obj[i].amount}/-</td>
+                </tr>
+                `
 }
+JsBarcode("#code128", Recipt);
+
+JsBarcode("#code128", Recipt, {
+    format: "CODE128",
+    // lineColor: "#0aa",
+    // width:4,
+    // height:40,
+    displayValue: false
+});
 
 var id = document.getElementById("mainDiv2");
 id.innerHTML = `
-    <div id= "text">
-    <h2>Office Copy</h2>
-    </div>
+<div id= "text">
+Office Copy
+</div>
 
-    <div id = "headDiv">
-        <table id = "table1">
-            <tr>
-                <td>Customer Name: </td>
-                <td class= "text">${name}</td>
+<div id = "headDiv">
+<table id = "table1">
+<tr>
+<td  class = "bold">Customer Name: </td>
+                <td class= "text1">${name}</td>
             </tr>
             <tr>
-                <td>Recipt no: </td>
-                <td class= "text">${Recipt}</td>
+                <td  class = "bold">Recipt no: </td>
+                <td class= "text1">${Recipt}</td>
             </tr>
             <tr>
-                <td>mobile No: </td>
-                <td class= "text">${mobileNo}</td>
+                <td  class = "bold">Mobile No: </td>
+                <td class= "text1">${mobileNo}</td>
             </tr>
             <tr class ="color">
-                <td>Delivery Date: </td>
-                <td class= "text">${DeliveryDate}</td>
+                <td  class = "bold">Delivery Date: </td>
+                <td class= "text1">${DeliveryDate}</td>
             </tr>
         </table>
         <table id = "table2">
             <tr>
-                <td>Print Date: </td>
+                <td  class = "bold">Print Date: </td>
                 <td class= "text">${DeliveryDate}</td>
             </tr>
             <tr>
-                <td>print Time: </td>
+                <td  class = "bold">Print Time: </td>
                 <td class= "text">${printTime}</td>
             </tr>
             <tr class ="color">
-                <td>Packet No: </td>
+                <td  class = "bold">Packet No: </td>
                 <td class= "text">${PacketNo}</td>
             </tr>
             <tr>
-            <td colspan="2">
-            <svg id="code128"></svg>
-            </td>
-            </tr>
+            <td colspan="2" id ="center">
+            <svg id="code128"></svg>                
+        </td>
+    </tr>
 
         </table>
     </div>
     <div id = "div2">
     <table id = "mainTable1" >
         <tr class = "color">
-        <th class = "tr">s no</th>
-        <th class = "tr">service</th>
+        <th class = "tr">S no</th>
+        <th class = "tr">Service</th>
         <th class = "tr">Color</th>
         <th class = "tr">Qty</th>
         <th class = "tr">Weight</th>
@@ -240,7 +271,7 @@ id.innerHTML = `
             daimond weigth is 1.25ct</p>
         </div>
         <div id = "tableDiv">
-            <table id = "bottomTable">
+            <table id = "bottomTable"  class = "bold">
                  <tr>
                     <td>Total Amount: </td>
                     <td class ="color text">20000</td>
@@ -254,8 +285,8 @@ id.innerHTML = `
                     <td class= "text">2000</td>
                 </tr>
                 <tr id = "border">
-                    <td>Blance: </td>
-                    <td class ="color text">8000</td>
+                    <td class = "padding">Balance: </td>
+                    <td class ="color text padding">8000</td>
                 </tr>
             </table>
         </div>
@@ -281,13 +312,13 @@ for (var i = 0; i < obj.length; i++) {
         <td id = "td">${obj[i].weigth}</td>
         <td id = "td">${i + 1}</td>
         <td id = "td">${i + 1}</td>
-        <td id = "td2">${obj[i].amount}/-</td>
+        <td id = "td2"  class = "bold">${obj[i].amount}/-</td>
     </tr>
     `
 }
 
 function printElem() {
-    var content = document.getElementById("main").innerHTML;
+    var content = document.getElementById("get").innerHTML;
     var mywindow = window.open('', 'Print');
 
     mywindow.document.write('<html><head><title>Print</title>');
@@ -303,5 +334,12 @@ function printElem() {
     // mywindow.close();
     return true;
 }
-
 JsBarcode("#code128", Recipt);
+
+JsBarcode("#code128", Recipt, {
+    format: "CODE128",
+    // lineColor: "#0aa",
+    // width:4,
+    // height:40,
+    displayValue: false
+});
