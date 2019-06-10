@@ -82,7 +82,7 @@ var PacketNo = 25
 
 var id = document.getElementById("mainDiv");
 id.innerHTML = `
-<div id= "text">
+<div id= "heading">
 Customer Copy
 </div>
         <div id = "headDiv">
@@ -142,29 +142,29 @@ Customer Copy
         </div>
         <div id = "div3">
             <div id = "divP">
-            <p>I Have read & understood thye description of my articles(s).
-            and i agreed that the company Shall not be responsible for
+            <p>I have read & understood the description of my articles(s).
+            And I agreed that the company Shall not be responsible for
             the articles(s) left over 30 Days. And the company Sahll also
             not be responsible for any lose or damage of articles(s)
-            during examination process, resulting from robbery and theft, negligrnce and natural act of God </p>
+            during examination process, resulting from robbery and theft, negligence and natural act of God <span class = "bold under"> Pick up is after 6:00 PM</span> </p>
             </div>
             <div id = "tableDiv">
             <table id = "bottomTable"  class = "bold">
             <tr>
             <td>Total Amount: </td>
-            <td class ="color text">20000</td>
+            <td class ="color text textI">20000</td>
             </tr>
             <tr>
             <td>Advance: </td>
-            <td class= "text">10000</td>
+            <td class= "text textI">10000</td>
             </tr>
             <tr>
             <td>Discount: </td>
-            <td class= "text">2000</td>
+            <td class= "text textI">2000</td>
             </tr>
             <tr id = "border">
             <td class = "padding">Balance: </td>
-            <td class ="color text padding">8000</td>
+            <td class ="color text textI padding">8000</td>
             </tr>
             </table>
             </div>
@@ -206,7 +206,7 @@ JsBarcode("#code128", Recipt, {
 
 var id = document.getElementById("mainDiv2");
 id.innerHTML = `
-<div id= "text">
+<div id= "heading">
 Office Copy
 </div>
 
@@ -265,7 +265,7 @@ Office Copy
     </table>
     </div>
     <div id = "div3">
-        <div id = "divP">
+        <div id = "divP1">
             <p><h4>Comment:</h4> Take care of the Stone, Check
             Mine, weigth of the Ring is 5.53 grams and
             daimond weigth is 1.25ct</p>
@@ -274,19 +274,19 @@ Office Copy
             <table id = "bottomTable"  class = "bold">
                  <tr>
                     <td>Total Amount: </td>
-                    <td class ="color text">20000</td>
+                    <td class ="color text textI">20000</td>
                 </tr>
                 <tr>
                     <td>Advance: </td>
-                    <td class= "text">10000</td>
+                    <td class= "text textI">10000</td>
                 </tr>
                 <tr>
                     <td>Discount: </td>
-                    <td class= "text">2000</td>
+                    <td class= "text textI">2000</td>
                 </tr>
                 <tr id = "border">
                     <td class = "padding">Balance: </td>
-                    <td class ="color text padding">8000</td>
+                    <td class ="color text textI padding">8000</td>
                 </tr>
             </table>
         </div>

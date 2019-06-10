@@ -26,15 +26,14 @@
     display: inline-block;
     font-size: 0.9em;
 }
-
 #table1 {
     float: left;
-    width: 50%;
+    width: 60%;
 }
 
 #table2 {
     float: right;
-    width: 50%;
+    width: 40%;
 }
 
 #mainTable {
@@ -126,9 +125,12 @@ p{
     border-top: 1px solid black; 
  }
    
-#text{
+ #heading{
     width: 100%;
     text-align: center;
+ }
+.textI{
+    font-style: italic;
 }
 .tr{
     border-right: 1px solid black;
@@ -162,6 +164,16 @@ svg{
 .bold{
     font-weight: bold;
 }
-.table1 .bold{
+#table1 .bold{
     font-size: 0.8em;
+}
+.under{
+    text-decoration: underline;
+}
+#divP1{
+    width: 50%;
+    flex: 1;
+    /* float: left; */
+    font-size: 0.9em;
+    font-style: italic;
 }
